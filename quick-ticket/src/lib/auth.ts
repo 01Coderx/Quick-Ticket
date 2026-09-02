@@ -6,9 +6,10 @@ const secret = new TextEncoder().encode(process.env.AUTH_SECRET);
 const cookieName = 'auth-token';
 
 // Encrypt and sign token
-export async function signAuthToken(payload: string | number) {
+// Encrypt and sign token
+export async function signAuthToken(userId: string | number) {
   try {
-    const token = await new SignJWT(payload)
+    const token = await new SignJWT({ userId })
       .setProtectedHeader({ alg: 'HS256' })
       .setIssuedAt()
       .setExpirationTime('7d')
@@ -16,7 +17,7 @@ export async function signAuthToken(payload: string | number) {
 
     return token;
   } catch (error) {
-    logEvent('Token signing failed', 'auth', { payload }, 'error', error);
+    logEvent('Token signing failed', 'auth', { userId }, 'error', error);
     throw new Error('Token signing failed');
   }
 }
