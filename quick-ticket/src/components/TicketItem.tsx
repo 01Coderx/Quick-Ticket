@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getPriorityClass } from '@/utils/ui';
-import type { Ticket } from '@/generated/prisma';
+import type { Ticket } from '@prisma/client';
 
 type TicketItemProps = {
   ticket: Ticket;
