@@ -6,7 +6,7 @@ const secret = new TextEncoder().encode(process.env.AUTH_SECRET);
 const cookieName = 'auth-token';
 
 // Encrypt and sign token
-export async function signAuthToken(payload: any) {
+export async function signAuthToken(payload: string | number) {
   try {
     const token = await new SignJWT(payload)
       .setProtectedHeader({ alg: 'HS256' })
