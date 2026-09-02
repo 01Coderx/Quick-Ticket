@@ -151,7 +151,7 @@ export async function loginUser(
       return { success: false, message: 'Invalid email or password' };
     }
 
-    const token = await signAuthToken({ userId: user.id });
+    const token = await signAuthToken(user.id);
     await setAuthCookie(token);
 
     return { success: true, message: 'Login successful' };
