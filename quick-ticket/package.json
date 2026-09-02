@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@prisma/client": "^6.8.2",
-    "@sentry/nextjs": "^9.19.0",
+    "@sentry/nextjs": "^10.73.0",
     "bcryptjs": "^3.0.2",
     "cookie": "^1.0.2",
     "jose": "^6.0.11",
