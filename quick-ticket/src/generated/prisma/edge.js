@@ -143,7 +143,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/media/divyansh-nigam/OS/quick-ticket/src/generated/prisma",
+      "value": "C:\\Users\\kuchb\\Downloads\\Quick-Ticket\\Quick-Ticket-main\\quick-ticket\\Quick-Ticket\\quick-ticket\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -152,17 +152,16 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "debian-openssl-3.0.x",
+        "value": "windows",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/media/divyansh-nigam/OS/quick-ticket/prisma/schema.prisma",
+    "sourceFilePath": "C:\\Users\\kuchb\\Downloads\\Quick-Ticket\\Quick-Ticket-main\\quick-ticket\\Quick-Ticket\\quick-ticket\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null,
-    "schemaEnvPath": "../../../.env"
+    "rootEnvPath": null
   },
   "relativePath": "../../../prisma",
   "clientVersion": "6.8.2",

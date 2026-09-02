@@ -1,0 +1,4 @@
+node_modules/
+src/prisma/generated/
+src/generated/prisma/
+.next/
