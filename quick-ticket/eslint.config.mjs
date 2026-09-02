@@ -11,6 +11,10 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    // Add the specific folders you want ESLint to skip here
+    ignores: ["src/generated/**/*", "dist/**/*"], 
+  }
 ];
 
 export default eslintConfig;
